@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- font awsome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- styleseet link  -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>E-Shop | Ecomerce Website Design</title>
+  </head>
+  <body class="bg-white">
+    <div class="mess-bg-danger">hello</div>
+    <!-- =========== navBar =============== -->
+    <nav class=" bg-body-tertiary pb-5 ">
+      <div class="position-fixed top-0 start-0  w-100 z-3 bg-white py-3">
+        <div class="container d-flex justify-content-between z-3 align-items-center">
+          <a class="navbar-brand"
+            ><img
+              src="./images/logoKiekeFotografie-e1460817748238 1.png"
+              class="img-fluid w-75"
+              alt=""
+          /></a>
+          <div class="d-flex justify-content-center align-items-center gap-5">
+              <ul
+                id="hamburger"
+                class="list-unstyled z-3 d-flex fw-bold hamburger  align-items-lg-center gap-5 ms-5 m-auto"
+              >
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link">Prices</a></li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contact Us</a>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-center align-items-center gap-2">
+                <button
+                  class="py-2 bt px-2 rounded-5 text-white bgColor"
+                  type="submit"
+                >
+                  Get Started
+                </button>
+                <i id="ham-btn" class="fa-solid fa-bars fs-5 d-lg-none"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- caruusel ========= -->
+      <div id="carouselExampleCaptions" class="carousel mt-5 pt-5 z-0 slide container mt-4">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-md-flex gap-1">
+              <div class="z-3 mb-3 mb-md-0">
+                <h1 class="caroselFont">
+                  CAPTURING MOMENTS <span class="text-primary">IN</span>
+                  TIME
+                </h1>
+                <p class="caroselPtext">
+                  Some representative placeholder content for the first slide.
+                </p>
+                <button
+                  class="bt py-2 w-50 px-3 rounded-5 text-white bgColor"
+                  type="submit"
+                >
+                  Get Started
+                </button>
+              </div>
+              <div>
+                <img
+                  src="./images/Rectangle 32.png"
+                  class="d-block img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class=" d-md-flex gap-2">
+              <div class="">
+                <h1 class="caroselFont">
+                  CAPTURING MOMENTS <span class="text-primary">IN</span> TIME
+                </h1>
+                <p class="caroselPtext">
+                  Some representative placeholder content for the first slide.
+                </p>
+                <button
+                  class="bt py-2 px-3 rounded-5 text-white bgColor"
+                  type="submit"
+                >
+                  Get Started
+                </button>
+              </div>
+              <div class="mt-4">
+                <img
+                  src="./images/Rectangle 32.png"
+                  class="d-block img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- skilled prothography -->
+    <section class="py-5" style="background-color: #f3edfe">
+      <div
+        class="container d-md-flex gap-5 justify-content-center align-items-center"
+      >
+        <!-- right item  -->
+        <div
+          class="d-lg-flex justify-content-center align-items-center gap-3 text-center"
+        >
+          <div class="mb-2 mb-lg-0">
+            <img src="./images/Rectangle 5.png" alt="" />
+          </div>
+          <div class="d-lg-flex flex-column gap-3">
+            <div class="mb-2 mb-lg-0">
+              <img
+                src="./images/Rectangle 6.png"
+                alt=""
+                class="img-fluid object-fit-cover"
+              />
+            </div>
+            <div class="mb-2 mb-lg-0">
+              <img
+                src="./images/Rectangle 7.png"
+                alt=""
+                class="img-fluid object-fit-cover"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- left item  -->
+        <div class="mt-5 text-center text-md-start w-auto">
+          <h5 class="mb-2">--About Us</h5>
+          <h1 class="fs-1 fw-bold py-2">
+            We Are Very <span class="text-primary">Skilled</span> IN
+            <span class="text-primary">Photography</span>
+          </h1>
+          <p class="text-wrap py-3 px-2">
+            Hi, I'm Angelique and photography is my passion! My father passed on
+            the “photographer virus” to me. From analogue to digital. I have
+            taken a number of courses and workshops and, above all, practiced a
+            lot! My children are now used to modeling. Perhaps that is where the
+            penchant for taking photos of children comes from. The pure
+            appearance and enthusiasm of children. It's always fun!
+          </p>
+          <q class="d-block"
+            >“Photography is the art of frozen time… the ability to store
+            emotions and feelings within a frame.”</q
+          >
+          <button
+            class="py-2 mt-3 bt px-3 rounded-5 text-white bgColor"
+            type="submit"
+          >
+            See Our Portfolio
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== Portfolio ============= -->
+    <section>
+      <div class="container py-4">
+        <h1 class="text-center fw-bold">
+          Our <span class="text-primary">Portfolio</span>
+        </h1>
+        <div class="w-auto shadow-lg rounded p-2 mt-2">
+          <ul
+            class="list-unstyled d-flex flex-wrap gap-3 justify-content-center justify-content-md-evenly mt-3 fw-bold text-secondary"
+          >
+            <li>All</li>
+            <li class="underline">Childrens</li>
+            <li>Potraits</li>
+            <li>Family</li>
+            <li>Other Photography</li>
+          </ul>
+        </div>
+        <div class="py-3 d-flex flex-column gap-3 align-items-center">
+          <div class="d-lg-flex gap-2 gap-md-3 text-center justify-content-center align-items-center">
+            <div class="mb-2">
+              <img src="./images/Rectangle 11.png" alt="" class="img-fluid object-fit-cover">
+            </div>
+            <div class="d-md-flex flex-column gap-3">
+              <div class="d-md-flex gap-3 mb-2">
+                <div>
+                  <img src="./images/Rectangle 12.png" alt="" class=" img-fluid object-fit-cover mb-2 mb-md-0">
+                </div>
+                <div>
+                  <img src="./images/Rectangle 13.png" alt="" class="img-fluid object-fit-cover">
+                </div>
+              </div>
+              <div class="d-md-flex gap-md-3">
+                <div class="mb-2 mb-md-0 ">
+                  <img src="./images/Rectangle 14.png" alt="" class="img-fluid object-fit-cover">
+                </div>
+                <div>
+                  <img src="./images/Rectangle 15.png" alt="" class="img-fluid object-fit-cover">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-flex gap-2 gap-md-3 text-center justify-content-center align-items-center">
+            <div class="d-md-flex flex-column gap-3">
+              <div class="d-md-flex gap-md-3 gap-1 gap-2 mb-2">
+                <div>
+                  <img src="./images/Rectangle 17.png" alt="" class="mb-2 img-fluid object-fit-cover">
+                </div>
+                <div>
+                  <img src="./images/Rectangle 16.png" alt="" class=" img-fluid object-fit-cover">
+                </div>
+              </div>
+               <div class="d-md-flex gap-1 gap-md-3 gap-1">
+                <div>
+                  <img src="./images/Rectangle 19.png" alt="" class="img-fluid mb-2 object-fit-cover">
+                </div>
+                <div class="mb-2 mb-md-0">
+                  <img src="./images/Rectangle 20.png" alt="" class=" img-fluid object-fit-cover">
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="./images/Rectangle 18.png" alt="" class="img-fluid object-fit-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========== Price section ============== -->
+    <section class="py-5">
+      <div class="container w-100">
+        <h1 class="fw-bold display-2 text-center">Prices</h1>
+
+        <div
+          class="row row-cols-lg-4 mt-2 gap-3 gap-md-5 justify-content-center align-items-center"
+        >
+          <!-- ==== item 1 ===== -->
+          <div class="col p-4 py-md-5">
+            <p class="text-center fw-bold">
+              Children's photography/family/pregnancy/ <br />
+              loveshoot
+            </p>
+            <p class="text-center">
+              The price for this is €50.00 (incl. VAT) and takes approximately
+              one hour.For that you get 10/15 edited digital files in large
+              format.
+            </p>
+            <h1 class="fw-bold display-2 text-center">€50.00</h1>
+            <button
+              class="py-2 mx-auto d-block mt-3 bt px-3 rounded-5 text-white bgColor"
+              type="submit"
+            >
+              See Our Portfolio
+            </button>
+          </div>
+          <!-- ==== item 2 ===== -->
+          <div class="col p-4 py-md-5 bg-black text-white rounded">
+            <p class="text-center text-wrap fw-bold">
+              Children's photography/family/pregnancy/ <br />
+              loveshoot
+            </p>
+            <p class="text-center">
+              The price for this is €50.00 (incl. VAT) and takes approximately
+              one hour.For that you get 10/15 edited digital files in large
+              format.
+            </p>
+            <h1 class="fw-bold display-2 text-center">€50.00</h1>
+            <button
+              class="py-2 mx-auto d-block mt-3 bt px-3 rounded-5 text-white bgColor"
+              type="submit"
+            >
+              See Our Portfolio
+            </button>
+          </div>
+          <!-- ==== item 3 ===== -->
+          <div class="col p-4 py-md-5">
+            <p class="text-center fw-bold">
+              Children's photography/family/pregnancy/ <br />
+              loveshoot
+            </p>
+            <p class="text-center">
+              The price for this is €50.00 (incl. VAT) and takes approximately
+              one hour.For that you get 10/15 edited digital files in large
+              format.
+            </p>
+            <h1 class="fw-bold display-2 text-center">€50.00</h1>
+            <button
+              class="py-2 mx-auto d-block mt-3 bt px-3 rounded-5 text-white bgColor"
+              type="submit"
+            >
+              See Our Portfolio
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= Testimonials ======= -->
+    <section class="testi py-3 py-md-5">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-center gap-md-4 gap-2 align-items-center"
+        >
+          <!-- left item  -->
+          <div class="flex-grow-1 text-center text-md-start">
+            <h5>Testimonials</h5>
+            <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+            <p class="pe-4 d-inline-block">
+              This photography website is a true gem for anyone who appreciates
+              artistry and storytelling through the lens. The images are
+              awe-inspiring, and the website provides an engaging and immersive
+              experience. With a few minor enhancements in user-friendliness and
+              performance, it could become an even more exceptional platform for
+              showcasing photography talent.
+            </p>
+            <div
+              class="d-md-flex gap-2 justify-content-center justify-content-md-start p-1 gap-5 align-items-center"
+            >
+              <div
+                class="d-flex  rounded-5 px-3 py-1 gap-3 align-items-center bg-secondary text-white">
+                <img src="./images/Ellipse 1.png" alt="" />
+                <p>Amane Indahnya</p>
+              </div>
+              <div class="mt-3 mt-md-0">
+                <i
+                  class="fa-solid fa-arrow-left p-3 border border-2 rounded-5"
+                ></i>
+                <i
+                  class="fa-solid fa-arrow-right p-3 border border-2 rounded-5"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- right item  -->
+          <div class="flex-grow-1">
+            <div class="w-100">
+              <img class="bollimage" src="./images/Rectangle 24.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- insta feed  -->
+    <section class="py-5">
+      <div class="container">
+        <div
+          class="d-flex px-md-5 px-2 justify-content-between align-items-center"
+        >
+          <h1>Instagram Feed</h1>
+          <div>
+            <button
+              class="py-2 mx-auto d-block mt-3 bt px-3 rounded-5 text-white bgColor"
+              type="submit"
+            >
+              See Our Portfolio
+            </button>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column flex-md-row gap-3 mt-3 justify-content-center align-items-center"
+        >
+          <div class="d-flex flex-column gap-2">
+            <img
+              src="./images/Rectangle 40.png"
+              class="object-fit-cover img-fluid"
+              alt=""
+            />
+            <img
+              src="./images/Rectangle 35.png"
+              alt=""
+              class="object-fit-cover img-fluid"
+            />
+          </div>
+          <div class="d-flex gap-3">
+            <div class="d-flex flex-column gap-2">
+              <img
+                src="./images/Rectangle 36.png"
+                alt=""
+                class="img-fluid object-fit-cover"
+              />
+              <img
+                src="./images/Rectangle 38.png"
+                alt=""
+                class="img-fluid object-fit-cover"
+              />
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <img
+                src="./images/Rectangle 37.png"
+                alt=""
+                class="img-fluid object-fit-cover"
+              />
+              <img
+                src="./images/Rectangle 39.png"
+                alt=""
+                class="img-fluid object-fit-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- qution section  -->
+    <section class="py-3 py-md-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-around align-items-center gap-3">
+          <!-- left item  -->
+          <div class="mb-4">
+            <h2 class="fw-bold">Have A Question?</h2>
+            <p>
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <br />
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div>
+              <form action="" class="">
+                <div class="mb-3">
+                  <label for="name" class="form-label"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter Your Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                  type="email"
+                    class="form-control"
+                    id="email"
+                    rows="3"
+                    placeholder="name@example.com"
+                  ></input>
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea name="textAriya" id="message" class="form-control"></textarea>
+                </div>
+              </form>
+            </div>
+            <!-- right item  -->
+          </div>
+            <div class="rightItem p-5 rounded-5">
+              <h3 class="fw-bold">Get In Touch</h3>
+              <p>We love to hear from you.Our friendly Team is always <br> here to chat.</p>
+              <div class="d-flex flex-column gap-2">
+                <div class="d-flex align-items-center gap-3">
+                  <div class="contact p-2 rounded-5 ">
+
+                  <img src="./images/Group 13.png" alt="">
+                  </div>
+                  <div>
+                    <h5 class="text-secondary">Location:</h5>
+                    <small class="text-secondary">199 Nueces ST,Austin,TX 78701</small>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="contact p-2 rounded-5">
+
+                  <img src="./images/Group 13.png" alt="">
+                  </div>
+                  <div>
+                    <h5 class="text-secondary">Location:</h5>
+                    <small class="text-secondary">199 Nueces ST,Austin,TX 78701</small>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="contact p-2 rounded-5">
+                  <img src="./images/Group 13.png" alt="">
+
+                  </div>
+                  <div>
+                    <h5 class="text-secondary">Location:</h5>
+                    <small class="text-secondary">199 Nueces ST,Austin,TX 78701</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section start here  -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="d-md-flex text-center text-md-start justify-content-between align-items-center">
+          <div class="mb-2">
+            <img src="./images/logoKiekeFotografie-e1460817748238 1.png" alt="">
+          </div>
+          <div class="d-md-flex justify-content-center align-items-center gap-4 mb-2">
+            <a href="#" class="text-secondary me-4 me-md-0">Privacy Policy</a>
+            <a href="#" class="text-secondary">Terms & Conditions</a>
+          </div>
+          <div>
+            <div class="d-flex justify-content-center gap-3">
+              <img src="./images/Vector (1).png" alt="">
+              <img src="./images/Vector (4).png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
